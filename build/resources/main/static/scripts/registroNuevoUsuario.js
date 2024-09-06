@@ -307,7 +307,7 @@ async function crearNuevoContactoEDVacio() {
 async function fetchLastIdPerrito() {
   try {
     const response = await fetch(
-      "http://54.86.9.85:8081/api/safedog/perritos/lastId"
+      "http://54.86.9.85:8080/api/safedog/perritos/lastId"
     ); // Adjust URL as needed
     if (!response.ok) {
       throw new Error("Network response was not ok");
@@ -322,7 +322,7 @@ async function fetchLastIdPerrito() {
 async function fetchLastIdContactE() {
   try {
     const response = await fetch(
-      "http://54.86.9.85:8081/api/safedog/Contacto_Emergencia/lastId"
+      "http://54.86.9.85:8080/api/safedog/Contacto_Emergencia/lastId"
     ); // Adjust URL as needed
     if (!response.ok) {
       throw new Error("Network response was not ok");

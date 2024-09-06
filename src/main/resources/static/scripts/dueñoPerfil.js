@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // PUT request function
 function sendInfoPerrito(jsonDataPerrito) {
   const idPerrito = localStorage.getItem("idPerrito");
-  const urlPerrito = `http://54.86.9.85:8081/api/safedog/perritos/perrito/${idPerrito}`;
+  const urlPerrito = `http://54.86.9.85:8080/api/safedog/perritos/perrito/${idPerrito}`;
 
   fetch(urlPerrito, {
     method: "PUT",
@@ -123,7 +123,7 @@ function sendInfoPerrito(jsonDataPerrito) {
 // PUT request function
 function sendInfoDuenio(jsonDataDuenio) {
   const idDuenio = localStorage.getItem("idDuenio");
-  const urlDuenio = `http://54.86.9.85:8081/api/safedog/duenios/duenio/${idDuenio}`;
+  const urlDuenio = `http://54.86.9.85:8080/api/safedog/duenios/duenio/${idDuenio}`;
 
   fetch(urlDuenio, {
     method: "PUT",
@@ -146,7 +146,7 @@ function sendInfoDuenio(jsonDataDuenio) {
 // PUT request function
 function sendInfoContactoE(jsonDataContactoE) {
   const idContactoE = localStorage.getItem("idContactoDeEmergencia");
-  const urlContactoE = `http://54.86.9.85:8081/api/safedog/Contacto_Emergencia/contactoE/${idContactoE}`;
+  const urlContactoE = `http://54.86.9.85:8080/api/safedog/Contacto_Emergencia/contactoE/${idContactoE}`;
 
   fetch(urlContactoE, {
     method: "PUT",
@@ -169,7 +169,7 @@ function sendInfoContactoE(jsonDataContactoE) {
 function getInfoDuenio() {
   let idDuenio = localStorage.getItem("idDuenio");
 
-  let urlDuenio = `http://54.86.9.85:8081/api/safedog/duenios/listado/${idDuenio}`;
+  let urlDuenio = `http://54.86.9.85:8080/api/safedog/duenios/listado/${idDuenio}`;
 
   fetch(urlDuenio, {
     method: "GET", // This can be omitted since GET is the default method
@@ -201,7 +201,7 @@ function getInfoDuenio() {
 function getInfoContactoE() {
   let idContactoE = localStorage.getItem("idContactoDeEmergencia");
 
-  let urlContactoE = `http://54.86.9.85:8081/api/safedog/Contacto_Emergencia/listado/${idContactoE}`;
+  let urlContactoE = `http://54.86.9.85:8080/api/safedog/Contacto_Emergencia/listado/${idContactoE}`;
 
   fetch(urlContactoE, {
     method: "GET", // This can be omitted since GET is the default method
@@ -232,7 +232,7 @@ function getInfoContactoE() {
 function getInfoPerrito() {
   let idPerrito = localStorage.getItem("idPerrito");
 
-  let urlPerrito = `http://54.86.9.85:8081/api/safedog/perritos/listado/${idPerrito}`;
+  let urlPerrito = `http://54.86.9.85:8080/api/safedog/perritos/listado/${idPerrito}`;
 
   fetch(urlPerrito, {
     method: "GET", // This can be omitted since GET is the default method

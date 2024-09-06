@@ -92,7 +92,7 @@ document
 
 // Function to fetch user data
 function getInfoDuenio(username, password) {
-  const urlDuenio = `http://54.86.9.85:8081/api/safedog/duenios/duenio/correo?correo=${username}`;
+  const urlDuenio = `http://54.86.9.85:8080/api/safedog/duenios/duenio/correo?correo=${username}`;
 
   console.log("Fetching data from URL:", urlDuenio); // Log the URL being used
 
