@@ -1,0 +1,12 @@
+spring:
+ application:
+  name: safedog
+ 
+ datasource:
+  url: jdbc:mysql://127.0.0.1:3306/safedog
+  username: root
+  password: M!tz1ferRMtz
+ 
+ jpa:
+  hibernate:
+   ddl-auto: update
